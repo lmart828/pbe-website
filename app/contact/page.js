@@ -101,7 +101,9 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <span style={{ color: "#23c4ff", fontWeight: 600 }}>Location:</span>{" "}
+                <span style={{ color: "#23c4ff", fontWeight: 600 }}>
+                  Location:
+                </span>{" "}
                 Miami, FL
               </div>
             </div>
@@ -136,7 +138,7 @@ export default function ContactPage() {
                 }}
               >
                 For urgent broadcast issues, include{" "}
-                <strong style={{ color: "#fff" }}>"URGENT"</strong> in your
+                <strong style={{ color: "#fff" }}>URGENT</strong> in your
                 message to prioritize response.
               </p>
             </div>
