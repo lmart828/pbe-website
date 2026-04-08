@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
             <Link href="/" className="logo-wrap">
               <Image
                 src="/logo.png"
-                alt="PBE Logo"
-                width={220}
-                height={90}
+                alt="Precision Broadcast Engineering Logo"
+                width={260}
+                height={100}
                 priority
                 className="logo-img"
               />
