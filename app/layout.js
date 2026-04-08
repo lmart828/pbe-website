@@ -11,11 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-
-        {/* GLOBAL NAVBAR */}
         <header className="navbar">
           <div className="nav-inner">
-
             <Link href="/" className="logo-wrap">
               <Image
                 src="/logo.png"
@@ -34,13 +31,10 @@ export default function RootLayout({ children }) {
               <Link href="/industries">Industries</Link>
               <Link href="/contact">Contact</Link>
             </nav>
-
           </div>
         </header>
 
-        {/* PAGE CONTENT */}
-        {children}
-
+        <main className="page-shell">{children}</main>
       </body>
     </html>
   );

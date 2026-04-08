@@ -3,30 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <header className="navbar">
-        <div className="nav-inner">
-          <Link href="/" className="logo-wrap">
-            <Image
-              src="/logo.png"
-              alt="Precision Broadcast Engineering"
-              width={220}
-              height={90}
-              priority
-              className="logo-img"
-            />
-          </Link>
-
-          <nav className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/industries">Industries</Link>
-            <Link href="/contact">Contact</Link>
-          </nav>
-        </div>
-      </header>
-
+    <>
       <section className="hero">
         <Image
           src="/broadcast-bg.jpg"
@@ -78,6 +55,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

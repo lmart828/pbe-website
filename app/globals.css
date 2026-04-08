@@ -18,10 +18,15 @@ body {
   color: white;
 }
 
-/* LINKS */
+/* GLOBAL LINKS */
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* GLOBAL PAGE WRAPPER */
+.page-shell {
+  padding-top: 120px;
 }
 
 /* NAVBAR */
@@ -33,11 +38,12 @@ a {
   z-index: 1000;
   background: linear-gradient(
     90deg,
-    rgba(4, 10, 20, 0.92),
-    rgba(6, 14, 28, 0.82)
+    rgba(4, 10, 20, 0.96),
+    rgba(6, 14, 28, 0.9)
   );
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .nav-inner {
@@ -74,11 +80,11 @@ a {
 }
 
 .nav-links a:hover {
-  opacity: 0.8;
+  opacity: 0.82;
   transform: translateY(-1px);
 }
 
-/* HERO */
+/* HOME HERO */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -86,6 +92,7 @@ a {
   align-items: center;
   padding: 180px 80px 110px;
   overflow: hidden;
+  margin-top: -120px;
 }
 
 .hero-image {
@@ -191,6 +198,7 @@ a {
   border-radius: 22px;
   padding: 32px;
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .info-card h2 {
@@ -202,6 +210,12 @@ a {
   color: #cfd7e4;
   line-height: 1.65;
   font-size: 1rem;
+}
+
+/* INNER PAGES DEFAULT SPACING */
+section,
+.page-section {
+  position: relative;
 }
 
 /* RESPONSIVE */
@@ -226,6 +240,14 @@ a {
   .cards-grid {
     grid-template-columns: 1fr;
   }
+
+  .page-shell {
+    padding-top: 140px;
+  }
+
+  .hero {
+    margin-top: -140px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -245,8 +267,13 @@ a {
     font-size: 0.95rem;
   }
 
+  .page-shell {
+    padding-top: 150px;
+  }
+
   .hero {
     padding: 160px 22px 72px;
+    margin-top: -150px;
   }
 
   .hero p {
