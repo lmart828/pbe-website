@@ -22,7 +22,10 @@ export default function ContactPage() {
               <div className="contact-info-list">
                 <div>
                   <span className="contact-label">Email:</span>{" "}
-                  <a href="mailto:lmart828@gmail.com" className="contact-link">
+                  <a
+                    href="mailto:lmart828@gmail.com?subject=Engineering Support Request"
+                    className="contact-link"
+                  >
                     lmart828@gmail.com
                   </a>
                 </div>
@@ -44,8 +47,7 @@ export default function ContactPage() {
 
                 <p className="contact-emergency-text">
                   For urgent broadcast issues, include{" "}
-                  <strong>URGENT</strong> in your message to prioritize
-                  response.
+                  <strong>URGENT</strong> in your message to prioritize response.
                 </p>
               </div>
             </div>
@@ -53,29 +55,56 @@ export default function ContactPage() {
             <div className="contact-card">
               <h2 className="contact-card-title">Send a Message</h2>
 
-              <form className="contact-form">
+              <form
+                className="contact-form"
+                action="https://formspree.io/f/xjgpdwal"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New message from Precision Broadcast Engineering website"
+                />
+
                 <input
                   type="text"
+                  name="name"
                   placeholder="Name"
                   className="contact-input"
+                  required
                 />
 
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email"
+                  className="contact-input"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company (optional)"
                   className="contact-input"
                 />
 
                 <textarea
+                  name="message"
                   placeholder="Describe your issue..."
                   rows={6}
                   className="contact-textarea"
+                  required
                 />
 
                 <button type="submit" className="contact-button">
                   Send Message
                 </button>
               </form>
+
+              <p className="contact-form-note">
+                Messages are sent directly to our engineering team.
+              </p>
             </div>
           </div>
         </section>
@@ -157,8 +186,9 @@ export default function ContactPage() {
         }
 
         .contact-link {
-          color: #fff;
+          color: #23c4ff;
           text-decoration: none;
+          font-weight: 500;
         }
 
         .contact-link:hover {
@@ -210,20 +240,9 @@ export default function ContactPage() {
           appearance: none;
         }
 
-        .contact-input::placeholder,
-        .contact-textarea::placeholder {
-          color: rgba(255, 255, 255, 0.45);
-        }
-
         .contact-textarea {
           resize: vertical;
           min-height: 160px;
-        }
-
-        .contact-input:focus,
-        .contact-textarea:focus {
-          border-color: rgba(70, 165, 255, 0.6);
-          box-shadow: 0 0 0 2px rgba(70, 165, 255, 0.15);
         }
 
         .contact-button {
@@ -239,13 +258,9 @@ export default function ContactPage() {
           box-shadow: 0 0 30px rgba(70, 165, 255, 0.22);
         }
 
-        .contact-button:hover {
-          opacity: 0.96;
-        }
-
         @media (max-width: 1024px) {
           .contact-page {
-            padding: 130px 40px 90px 40px;
+            padding: 130px 40px 90px;
           }
 
           .contact-grid {
@@ -255,73 +270,25 @@ export default function ContactPage() {
 
         @media (max-width: 768px) {
           .contact-page {
-            padding: 120px 20px 70px 20px;
+            padding: 120px 20px 70px;
           }
 
           .contact-title {
             font-size: clamp(2.2rem, 10vw, 3.2rem);
-            line-height: 1.08;
-          }
-
-          .contact-intro {
-            margin-top: 20px;
-            font-size: 1rem;
-            line-height: 1.75;
-          }
-
-          .contact-grid {
-            gap: 20px;
-            margin-top: 36px;
-          }
-
-          .contact-card {
-            padding: 22px;
-            border-radius: 20px;
-          }
-
-          .contact-card-title {
-            font-size: 1.55rem;
-          }
-
-          .contact-info-list {
-            font-size: 1rem;
-          }
-
-          .contact-emergency-box {
-            padding: 18px;
-            border-radius: 16px;
-          }
-
-          .contact-emergency-title {
-            font-size: 1.2rem;
-          }
-
-          .contact-emergency-text {
-            font-size: 0.98rem;
-            line-height: 1.7;
           }
 
           .contact-button {
             width: 100%;
-            justify-self: stretch;
           }
         }
 
         @media (max-width: 480px) {
           .contact-page {
-            padding: 110px 16px 60px 16px;
-          }
-
-          .contact-eyebrow {
-            font-size: 0.88rem;
+            padding: 110px 16px 60px;
           }
 
           .contact-title {
             font-size: 2rem;
-          }
-
-          .contact-card {
-            padding: 18px;
           }
         }
       `}</style>
