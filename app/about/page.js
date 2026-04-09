@@ -62,6 +62,30 @@ export default function AboutPage() {
         </article>
       </div>
 
+      <div className="about-grid">
+        <article className="about-card">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to deliver precision engineering support that keeps
+            broadcast systems stable, reliable, and ready for air. We are
+            committed to helping clients protect mission-critical operations
+            through expert diagnostics, practical solutions, and fast technical
+            response in environments where failure is not an option.
+          </p>
+        </article>
+
+        <article className="about-card">
+          <h2>Our Vision</h2>
+          <p>
+            Our vision is to become a trusted engineering partner for broadcast
+            organizations that demand excellence, reliability, and technical
+            confidence. We aim to be recognized for solving complex challenges,
+            strengthening operational continuity, and supporting the future of
+            high-performance broadcast systems.
+          </p>
+        </article>
+      </div>
+
       <div className="about-statement">
         <div className="about-statement-content">
           <h3>Built around reliability</h3>
