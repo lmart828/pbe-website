@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        <main className="page-shell">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
