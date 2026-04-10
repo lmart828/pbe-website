@@ -107,7 +107,7 @@ a {
   min-height: calc(100vh - 124px);
   display: flex;
   align-items: center;
-  padding: 40px 80px 110px;
+  padding: 20px 80px 110px;
   overflow: hidden;
 }
 
