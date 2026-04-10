@@ -6,7 +6,7 @@ export const metadata = {
   title: "Precision Broadcast Engineering",
   description: "Mission-critical broadcast engineering services",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon-v2.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
