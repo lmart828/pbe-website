@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <Image
-          src="/broadcast-bg.jpg"
+          src="/broadcast-bg-v1.png"
           alt="Broadcast Studio"
           fill
           priority
