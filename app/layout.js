@@ -5,6 +5,11 @@ import Link from "next/link";
 export const metadata = {
   title: "Precision Broadcast Engineering",
   description: "Mission-critical broadcast engineering services",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
