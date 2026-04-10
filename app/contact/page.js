@@ -156,7 +156,7 @@ export default function ContactPage() {
           background-color: #000;
           color: #fff;
           min-height: 100vh;
-          padding: 140px 48px 100px;
+          padding: 48px 48px 100px;
         }
 
         .contact-container {
