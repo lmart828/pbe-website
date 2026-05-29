@@ -41,6 +41,64 @@ export default function RootLayout({ children }) {
         </header>
 
         <main>{children}</main>
+
+        <footer className="site-footer">
+          <div className="footer-inner">
+            <div className="footer-brand">
+              <Image
+                src="/logo.png"
+                alt="Precision Broadcast Engineering Logo"
+                width={150}
+                height={58}
+                className="footer-logo"
+              />
+
+              <h2>Precision Broadcast Engineering</h2>
+              <p>
+                Engineering support, consulting, diagnostics, and technology
+                solutions for the broadcast industry.
+              </p>
+
+              <div className="footer-contact">
+                <p>Contact:</p>
+                <a href="mailto:support@pbe-engineering.com">
+                  support@pbe-engineering.com
+                </a>
+                <span>Miami, Florida, USA</span>
+              </div>
+            </div>
+
+            <nav className="footer-links" aria-label="Quick Links">
+              <h3>Quick Links</h3>
+              <Link href="/">Home</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/about">About</Link>
+              <Link href="/industries">Industries</Link>
+              <Link href="/support">Support</Link>
+              <Link href="/contact">Contact</Link>
+            </nav>
+
+            <nav className="footer-links" aria-label="Legal">
+              <h3>Legal</h3>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms-of-use">Terms of Use</Link>
+              <Link href="/copyright-notice">Copyright Notice</Link>
+              <Link href="/support-policy">Support Policy</Link>
+            </nav>
+          </div>
+
+          <div className="footer-bottom">
+            <p>© 2026 Precision Broadcast Engineering LLC. All Rights Reserved.</p>
+            <p className="footer-trademark">
+              GEN-B™ is a trademark of Precision Broadcast Engineering LLC.
+            </p>
+            <p className="footer-trademark">
+              Apple, iPhone, and App Store are trademarks of Apple Inc.
+              <br />
+              All other trademarks are the property of their respective owners.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
