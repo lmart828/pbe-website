@@ -34,20 +34,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-image: url("/header-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.navbar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(4, 10, 20, 0.35);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: #07111f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .nav-inner {
