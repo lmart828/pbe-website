@@ -32,7 +32,7 @@ export default function ContactPage() {
                     href="mailto:lmart828@gmail.com?subject=Engineering Support Request"
                     className="contact-link"
                   >
-                    lmart828@gmail.com
+                    support@pbe-engineering.com
                   </a>
                 </div>
 
