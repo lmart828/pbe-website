@@ -826,6 +826,87 @@ a {
   line-height: 1.75;
 }
 
+.genb-analysis-section {
+  padding: 82px 48px;
+  background: #050b14;
+}
+
+.genb-analysis-heading,
+.genb-analysis-image-wrap,
+.genb-analysis-grid {
+  width: min(1200px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genb-analysis-heading {
+  text-align: center;
+}
+
+.genb-analysis-heading h2 {
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  font-weight: 800;
+}
+
+.genb-analysis-heading p:last-child {
+  margin: 20px auto 0;
+  max-width: 820px;
+  color: #d5dce8;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.genb-analysis-image-wrap {
+  margin-top: 42px;
+  padding: 18px;
+  border: 1px solid rgba(0, 207, 255, 0.18);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+}
+
+.genb-analysis-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.genb-analysis-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.genb-analysis-card {
+  min-height: 220px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.genb-analysis-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 207, 255, 0.3);
+}
+
+.genb-analysis-card h3 {
+  color: #00cfff;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.genb-analysis-card p {
+  color: #d9e2ef;
+  line-height: 1.75;
+}
+
 .genb-final-cta {
   display: flex;
   justify-content: space-between;
@@ -1137,8 +1218,18 @@ a {
 
   .genb-section,
   .genb-about-section,
-  .genb-final-cta {
+  .genb-final-cta,
+  .genb-analysis-section {
     padding: 64px 32px;
+  }
+
+  .genb-analysis-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .genb-analysis-card {
+    padding: 24px;
   }
 
   .legal-page {
@@ -1287,13 +1378,15 @@ a {
 
   .genb-section,
   .genb-about-section,
-  .genb-final-cta {
+  .genb-final-cta,
+  .genb-analysis-section {
     padding: 56px 22px;
   }
 
   .genb-feature-grid,
   .genb-highlight-grid,
-  .genb-showcase-grid {
+  .genb-showcase-grid,
+  .genb-analysis-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1303,6 +1396,24 @@ a {
   }
 
   .genb-highlight-item {
+    min-height: auto;
+  }
+
+  .genb-analysis-heading p:last-child {
+    font-size: 1rem;
+  }
+
+  .genb-analysis-image-wrap {
+    margin-top: 32px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .genb-analysis-image {
+    border-radius: 10px;
+  }
+
+  .genb-analysis-card {
     min-height: auto;
   }
 

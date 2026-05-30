@@ -46,6 +46,21 @@ const showcaseCards = [
   },
 ];
 
+const analysisHighlights = [
+  {
+    title: "Oscilloscope Analysis",
+    text: "Monitor generated video levels and waveform characteristics before HDMI transmission.",
+  },
+  {
+    title: "Vectorscope Monitoring",
+    text: "Verify chroma positioning, color balance, and Rec.709 compliance.",
+  },
+  {
+    title: "Broadcast Workflow Integration",
+    text: "Built specifically for engineering, troubleshooting, and field verification tasks.",
+  },
+];
+
 export default function GenBPage() {
   return (
     <section className="genb-page">
@@ -184,6 +199,37 @@ export default function GenBPage() {
               <span className="genb-showcase-rule" />
               <h3>{card.title}</h3>
               <p>{card.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="genb-analysis-section">
+        <div className="genb-analysis-heading">
+          <p className="genb-kicker">Signal Intelligence</p>
+          <h2>Professional Signal Analysis</h2>
+          <p>
+            Integrated waveform and vectorscope-style analysis tools designed to
+            help engineers validate video signals before transmission.
+          </p>
+        </div>
+
+        <div className="genb-analysis-image-wrap">
+          <Image
+            src="/gen-b/genb-instruments-screen.png"
+            alt="GEN-B professional signal analysis instruments screen"
+            width={2796}
+            height={1290}
+            className="genb-analysis-image"
+          />
+        </div>
+
+        <div className="genb-analysis-grid">
+          {analysisHighlights.map((highlight) => (
+            <article className="genb-analysis-card" key={highlight.title}>
+              <span className="genb-showcase-rule" />
+              <h3>{highlight.title}</h3>
+              <p>{highlight.text}</p>
             </article>
           ))}
         </div>
