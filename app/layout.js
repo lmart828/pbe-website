@@ -81,10 +81,13 @@ export default function RootLayout({ children }) {
 
             <nav className="footer-links" aria-label="Legal">
               <h3>Legal</h3>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-              <Link href="/terms-of-use">Terms of Use</Link>
-              <Link href="/copyright-notice">Copyright Notice</Link>
-              <Link href="/support-policy">Support Policy</Link>
+              <Link href="/legal/privacy-policy">Privacy Policy</Link>
+              <Link href="/legal/terms-of-use">Terms of Use</Link>
+              <Link href="/legal/professional-disclaimer">
+                Professional Disclaimer
+              </Link>
+              <Link href="/legal/copyright-notice">Copyright Notice</Link>
+              <Link href="/legal/support-policy">Support Policy</Link>
             </nav>
           </div>
 
