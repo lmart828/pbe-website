@@ -235,6 +235,35 @@ export default function GenBPage() {
         </div>
       </section>
 
+      <section className="genb-action-section">
+        <div className="genb-action-heading">
+          <p className="genb-kicker">Workflow Preview</p>
+          <h2>GEN-B in Action</h2>
+          <p>
+            See GEN-B in operation as it navigates through test patterns, video
+            references, audio tone generation, RasterScope tools, and signal
+            analysis features.
+          </p>
+          <p>
+            Designed by broadcast engineers, GEN-B supports professional display
+            testing workflows across HDMI, USB-C video output, DisplayPort
+            adapters, and compatible external displays.
+          </p>
+        </div>
+
+        <div className="genb-action-video-wrap">
+          <video
+            className="genb-action-video"
+            controls
+            preload="metadata"
+            aria-label="GEN-B in operation"
+          >
+            <source src="/gen-b/genb-in-action.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       <section className="genb-final-cta">
         <div>
           <p className="genb-kicker">Download GEN-B</p>

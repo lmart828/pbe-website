@@ -935,6 +935,57 @@ a {
   line-height: 1.75;
 }
 
+.genb-action-section {
+  padding: 82px 48px;
+  background: linear-gradient(180deg, #040912 0%, #0a1320 100%);
+}
+
+.genb-action-heading,
+.genb-action-video-wrap {
+  width: min(1200px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genb-action-heading {
+  text-align: center;
+}
+
+.genb-action-heading h2 {
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  font-weight: 800;
+}
+
+.genb-action-heading p:not(.genb-kicker) {
+  margin: 18px auto 0;
+  max-width: 900px;
+  color: #d5dce8;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.genb-action-video-wrap {
+  margin-top: 42px;
+  padding: 14px;
+  border: 1px solid rgba(0, 207, 255, 0.28);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow:
+    0 0 34px rgba(0, 207, 255, 0.12),
+    0 28px 80px rgba(0, 0, 0, 0.42);
+}
+
+.genb-action-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 76vh;
+  border-radius: 16px;
+  background: #000000;
+}
+
 .genb-final-cta {
   display: flex;
   justify-content: space-between;
@@ -1247,7 +1298,8 @@ a {
   .genb-section,
   .genb-about-section,
   .genb-final-cta,
-  .genb-analysis-section {
+  .genb-analysis-section,
+  .genb-action-section {
     padding: 64px 32px;
   }
 
@@ -1407,7 +1459,8 @@ a {
   .genb-section,
   .genb-about-section,
   .genb-final-cta,
-  .genb-analysis-section {
+  .genb-analysis-section,
+  .genb-action-section {
     padding: 56px 22px;
   }
 
@@ -1431,13 +1484,15 @@ a {
     font-size: 1rem;
   }
 
-  .genb-analysis-image-wrap {
+  .genb-analysis-image-wrap,
+  .genb-action-video-wrap {
     margin-top: 32px;
     padding: 10px;
     border-radius: 16px;
   }
 
-  .genb-analysis-image {
+  .genb-analysis-image,
+  .genb-action-video {
     border-radius: 10px;
   }
 
