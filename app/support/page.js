@@ -16,7 +16,7 @@ export default function SupportPage() {
             Users can contact us at{" "}
             <a
               href="mailto:support@pbe-engineering.com"
-              className="support-email-link"
+              className="hover:text-cyan-400 hover:underline cursor-pointer transition-colors"
             >
               support@pbe-engineering.com
             </a>{" "}
