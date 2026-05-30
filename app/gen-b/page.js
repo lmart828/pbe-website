@@ -31,18 +31,18 @@ const highlights = [
   "Designed for iPhone",
 ];
 
-const showcaseSlides = [
+const showcaseCards = [
   {
-    src: "/gen-b/genb-feature-slide-1.png",
-    alt: "GEN-B broadcast test pattern feature screen",
+    title: "Portable Broadcast Testing",
+    text: "GEN-B turns your iPhone into a professional HDMI test signal source for quick field verification, troubleshooting, and setup checks.",
   },
   {
-    src: "/gen-b/genb-feature-slide-2.png",
-    alt: "GEN-B signal output and tone generator feature screen",
+    title: "Patterns, Video & Audio",
+    text: "Access HD test patterns, ProRes reference videos, and a built-in 1 kHz tone generator with broadcast-level presets.",
   },
   {
-    src: "/gen-b/genb-feature-slide-3.png",
-    alt: "GEN-B RasterScope and sweep analysis feature screen",
+    title: "Designed for Engineers",
+    text: "Built for broadcast workflows, GEN-B helps verify signal output, display behavior, active video area, and audio reference levels with confidence.",
   },
 ];
 
@@ -179,15 +179,11 @@ export default function GenBPage() {
         </div>
 
         <div className="genb-showcase-grid">
-          {showcaseSlides.map((slide) => (
-            <article className="genb-showcase-card" key={slide.src}>
-              <Image
-                src={slide.src}
-                alt={slide.alt}
-                width={695}
-                height={313}
-                className="genb-showcase-image"
-              />
+          {showcaseCards.map((card) => (
+            <article className="genb-showcase-card" key={card.title}>
+              <span className="genb-showcase-rule" />
+              <h3>{card.title}</h3>
+              <p>{card.text}</p>
             </article>
           ))}
         </div>
