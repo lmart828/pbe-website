@@ -13,8 +13,15 @@ export default function SupportPage() {
         <article className="service-card">
           <h2>Contact Support</h2>
           <p>
-            Users can contact us at support@pbe-engineering.com for technical
-            support, app questions, bug reports, or general assistance.
+            Users can contact us at{" "}
+            <a
+              href="mailto:support@pbe-engineering.com"
+              className="support-email-link"
+            >
+              support@pbe-engineering.com
+            </a>{" "}
+            for technical support, app questions, bug reports, or general
+            assistance.
           </p>
         </article>
 

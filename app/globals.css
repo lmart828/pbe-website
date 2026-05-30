@@ -290,6 +290,17 @@ a {
   line-height: 1.7;
 }
 
+.support-email-link {
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.support-email-link:hover {
+  color: #00cfff;
+  text-decoration: underline;
+}
+
 .services-cta {
   max-width: 1200px;
   margin: 40px auto 0;
