@@ -1,6 +1,7 @@
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import NavLinks from "./NavLinks";
 
 export const metadata = {
   title: "Precision Broadcast Engineering",
@@ -29,15 +30,7 @@ export default function RootLayout({ children }) {
               />
             </Link>
 
-            <nav className="nav-links">
-              <Link href="/">Home</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/about">About</Link>
-              <Link href="/industries">Industries</Link>
-              <Link href="/gen-b">GEN-B</Link>
-              <Link href="/support">Support</Link>
-              <Link href="/contact">Contact</Link>
-            </nav>
+            <NavLinks />
           </div>
         </header>
 
