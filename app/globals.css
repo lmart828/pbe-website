@@ -91,6 +91,10 @@ a {
   transform: translateY(-1px);
 }
 
+.nav-menu-toggle {
+  display: none;
+}
+
 /* =========================
    HOME HERO
 ========================= */
@@ -1225,16 +1229,94 @@ a {
   .nav-inner {
     min-height: auto;
     padding: 18px 0;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 18px;
     width: min(100% - 48px, 1320px);
   }
 
+  .nav-menu-toggle {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid rgba(0, 207, 255, 0.28);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  }
+
+  .nav-menu-toggle:hover,
+  .nav-menu-toggle.open {
+    border-color: rgba(0, 207, 255, 0.7);
+    background: rgba(0, 207, 255, 0.08);
+  }
+
+  .nav-menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 999px;
+    background: #00cfff;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .nav-menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav-menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   .nav-links {
-    gap: 24px;
-    flex-wrap: wrap;
-    padding-right: 0;
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-left: 0;
+    padding: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-top-color: rgba(0, 207, 255, 0.24);
+    border-radius: 0 0 16px 16px;
+    background: #07111f;
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+  }
+
+  .nav-links.nav-links-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    min-height: 48px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: rgba(0, 207, 255, 0.08);
+  }
+
+  .nav-links a:hover {
+    transform: none;
   }
 
   .hero {
@@ -1329,14 +1411,6 @@ a {
 
   .logo-img {
     max-width: 180px;
-  }
-
-  .nav-links {
-    gap: 16px;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
   }
 
   .hero {
