@@ -104,6 +104,9 @@ export default function GenBPage() {
               <Link href="/support" className="btn-secondary">
                 Contact Support
               </Link>
+              <Link href="/gen-b/wireless-output" className="btn-secondary">
+                Wireless Output
+              </Link>
             </div>
           </div>
 

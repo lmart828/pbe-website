@@ -1005,6 +1005,206 @@ a {
   font-size: 1.08rem;
 }
 
+.wireless-output-page {
+  background: #030812;
+}
+
+.wireless-hero,
+.wireless-section {
+  padding: 76px 48px;
+  background: linear-gradient(180deg, #040912 0%, #0a1320 100%);
+}
+
+.wireless-hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 207, 255, 0.18);
+}
+
+.wireless-hero-inner,
+.wireless-section-heading,
+.wireless-panel,
+.wireless-card-grid,
+.wireless-comparison-grid,
+.wireless-note {
+  width: min(1200px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wireless-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: start;
+}
+
+.wireless-hero-copy h1 {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  font-weight: 800;
+}
+
+.wireless-hero-copy p:not(.genb-kicker) {
+  margin-top: 24px;
+  max-width: 780px;
+  color: #d5dce8;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.wireless-mirroring-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 156px;
+  min-height: 46px;
+  padding: 14px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #029cff, #00cfff);
+  color: #00111c;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  box-shadow: 0 10px 28px rgba(0, 207, 255, 0.26);
+}
+
+.wireless-section-heading h2 {
+  max-width: 900px;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  font-weight: 800;
+}
+
+.wireless-panel {
+  margin-top: 34px;
+  padding: 32px;
+  border: 1px solid rgba(0, 207, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.wireless-panel p {
+  color: #d5dce8;
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
+
+.wireless-panel p + p {
+  margin-top: 18px;
+}
+
+.wireless-uses-section {
+  background: #050b14;
+}
+
+.wireless-card-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.wireless-card {
+  min-height: 160px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.wireless-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 207, 255, 0.3);
+}
+
+.wireless-card h3 {
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+
+.wireless-compare-section {
+  background: linear-gradient(180deg, #040912 0%, #0a1320 100%);
+}
+
+.wireless-comparison-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.wireless-comparison-card {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.wireless-comparison-card-cyan {
+  border-color: rgba(0, 207, 255, 0.22);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 207, 255, 0.1),
+    rgba(255, 255, 255, 0.04)
+  );
+}
+
+.wireless-comparison-card h3 {
+  color: #00cfff;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.wireless-comparison-card ul {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.wireless-comparison-card li {
+  position: relative;
+  padding-left: 22px;
+  color: #d9e2ef;
+  line-height: 1.55;
+}
+
+.wireless-comparison-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00cfff;
+  box-shadow: 0 0 10px rgba(0, 207, 255, 0.45);
+}
+
+.wireless-note {
+  padding: 30px 34px;
+  border: 1px solid rgba(0, 207, 255, 0.4);
+  border-left: 5px solid #00cfff;
+  border-radius: 18px;
+  background: rgba(0, 207, 255, 0.08);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.wireless-note p {
+  color: #ffffff;
+  font-size: 1.16rem;
+  line-height: 1.65;
+  font-weight: 800;
+}
+
+.wireless-final-cta {
+  border-top-color: rgba(0, 207, 255, 0.28);
+}
+
 /* =========================
    LEGAL
 ========================= */
@@ -1381,13 +1581,35 @@ a {
   .genb-about-section,
   .genb-final-cta,
   .genb-analysis-section,
-  .genb-action-section {
+  .genb-action-section,
+  .wireless-hero,
+  .wireless-section {
     padding: 64px 32px;
+  }
+
+  .wireless-hero {
+    min-height: auto;
+  }
+
+  .wireless-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .wireless-mirroring-button {
+    justify-self: start;
   }
 
   .genb-analysis-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
+  }
+
+  .wireless-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wireless-comparison-grid {
+    grid-template-columns: 1fr;
   }
 
   .genb-analysis-card {
@@ -1534,20 +1756,46 @@ a {
   .genb-about-section,
   .genb-final-cta,
   .genb-analysis-section,
-  .genb-action-section {
+  .genb-action-section,
+  .wireless-hero,
+  .wireless-section {
     padding: 56px 22px;
   }
 
   .genb-feature-grid,
   .genb-highlight-grid,
   .genb-showcase-grid,
-  .genb-analysis-grid {
+  .genb-analysis-grid,
+  .wireless-card-grid {
     grid-template-columns: 1fr;
   }
 
   .genb-feature-card,
-  .genb-about-panel {
+  .genb-about-panel,
+  .wireless-panel,
+  .wireless-comparison-card {
     padding: 24px;
+  }
+
+  .wireless-hero-copy h1 {
+    font-size: clamp(3.2rem, 17vw, 5rem);
+  }
+
+  .wireless-hero-copy p:not(.genb-kicker),
+  .wireless-panel p {
+    font-size: 1rem;
+  }
+
+  .wireless-mirroring-button {
+    width: 100%;
+  }
+
+  .wireless-note {
+    padding: 24px;
+  }
+
+  .wireless-note p {
+    font-size: 1rem;
   }
 
   .genb-highlight-item {
