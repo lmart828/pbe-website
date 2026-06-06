@@ -692,9 +692,9 @@ a {
   width: clamp(34px, 5.4vw, 56px);
   height: clamp(34px, 5.4vw, 56px);
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(0, 207, 255, 0.74);
+  border: 0;
   border-radius: 999px;
-  background: rgba(0, 8, 14, 0.1);
+  background: transparent;
   color: transparent;
   cursor: pointer;
   touch-action: manipulation;
@@ -720,10 +720,8 @@ a {
 .genb-diagram-hotspot:focus-visible,
 .genb-diagram-hotspot.is-active {
   outline: none;
-  border-color: #8af1ff;
-  background: rgba(0, 207, 255, 0.14);
-  box-shadow: 0 0 0 3px rgba(0, 207, 255, 0.22),
-    0 0 24px rgba(0, 207, 255, 0.48);
+  background: transparent;
+  box-shadow: none;
 }
 
 .genb-diagram-description {
