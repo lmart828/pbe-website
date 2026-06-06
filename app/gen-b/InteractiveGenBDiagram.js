@@ -136,7 +136,13 @@ const hotspots = [
 
 export default function InteractiveGenBDiagram() {
   const [activeHotspot, setActiveHotspot] = useState(null);
+  const [stageMetrics, setStageMetrics] = useState({
+    width: 0,
+    height: 0,
+    hotspotHalf: 28,
+  });
   const diagramRef = useRef(null);
+  const stageRef = useRef(null);
   const timerRef = useRef(null);
 
   const clearActiveHotspot = () => {
@@ -168,6 +174,35 @@ export default function InteractiveGenBDiagram() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!stageRef.current) {
+      return undefined;
+    }
+
+    const updateStageSize = () => {
+      const rect = stageRef.current.getBoundingClientRect();
+      const hotspot = stageRef.current.querySelector(".genb-diagram-hotspot");
+      const hotspotWidth = hotspot
+        ? Number.parseFloat(window.getComputedStyle(hotspot).width)
+        : 56;
+
+      setStageMetrics({
+        width: rect.width,
+        height: rect.height,
+        hotspotHalf: hotspotWidth / 2,
+      });
+    };
+
+    updateStageSize();
+
+    const resizeObserver = new ResizeObserver(updateStageSize);
+    resizeObserver.observe(stageRef.current);
+
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, []);
+
   const selectedHotspot = hotspots.find(
     (hotspot) => hotspot.number === activeHotspot
   );
@@ -178,7 +213,7 @@ export default function InteractiveGenBDiagram() {
       ref={diagramRef}
       aria-label="Interactive GEN-B menu diagram"
     >
-      <div className="genb-diagram-stage">
+      <div className="genb-diagram-stage" ref={stageRef}>
         <Image
           src="/gen-b/menu-interactive-diagram.png"
           alt="Numbered GEN-B interface menu diagram"
@@ -198,6 +233,16 @@ export default function InteractiveGenBDiagram() {
             style={{
               left: `${hotspot.x}%`,
               top: `${hotspot.y}%`,
+              "--stage-width": `${stageMetrics.width}px`,
+              "--stage-height": `${stageMetrics.height}px`,
+              "--hotspot-bg-x": `${
+                stageMetrics.hotspotHalf -
+                (stageMetrics.width * hotspot.x) / 100
+              }px`,
+              "--hotspot-bg-y": `${
+                stageMetrics.hotspotHalf -
+                (stageMetrics.height * hotspot.y) / 100
+              }px`,
             }}
             aria-label={`${hotspot.number}, ${hotspot.title}`}
             aria-pressed={activeHotspot === hotspot.number}

@@ -707,6 +707,20 @@ a {
   border-radius: inherit;
 }
 
+.genb-diagram-hotspot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: url("/gen-b/menu-interactive-diagram.png");
+  background-repeat: no-repeat;
+  background-size: var(--stage-width) var(--stage-height);
+  background-position: var(--hotspot-bg-x) var(--hotspot-bg-y);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, filter 0.18s ease;
+}
+
 .genb-diagram-hotspot span {
   position: absolute;
   width: 1px;
@@ -722,6 +736,15 @@ a {
   outline: none;
   background: transparent;
   box-shadow: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .genb-diagram-hotspot:hover::before {
+    opacity: 1;
+    transform: scale(1.045);
+    filter: drop-shadow(0 0 5px rgba(0, 207, 255, 0.55))
+      drop-shadow(0 0 13px rgba(0, 207, 255, 0.28));
+  }
 }
 
 .genb-diagram-description {
