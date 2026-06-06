@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import InteractiveGenBDiagram from "./InteractiveGenBDiagram";
 
 const features = [
   {
@@ -111,14 +112,7 @@ export default function GenBPage() {
           </div>
 
           <div className="genb-hero-visual">
-            <Image
-              src="/gen-b/genb-app-interface.png"
-              alt="GEN-B app interface"
-              width={1398}
-              height={645}
-              priority
-              className="genb-interface-image"
-            />
+            <InteractiveGenBDiagram />
             <Image
               src="/gen-b/genb-app-icon.png"
               alt="GEN-B app icon"
