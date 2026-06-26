@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import InteractiveGenBDiagram from "./InteractiveGenBDiagram";
 
+const GEN_B_APP_STORE_URL =
+  "https://apps.apple.com/us/app/gen-b/id6769944250";
+
 const features = [
   {
     title: "Broadcast Test Patterns",
@@ -93,7 +96,7 @@ export default function GenBPage() {
             </p>
 
             <div className="genb-hero-actions">
-              <a href="#" className="genb-store-link" aria-label="Download GEN-B on the App Store">
+              <a href={GEN_B_APP_STORE_URL} className="genb-store-link" aria-label="Download GEN-B on the App Store">
                 <Image
                   src="/gen-b/genb-app-store-badge.png"
                   alt="Download on the App Store"
@@ -271,7 +274,7 @@ export default function GenBPage() {
           </p>
         </div>
 
-        <a href="#" className="genb-store-link" aria-label="Download GEN-B on the App Store">
+        <a href={GEN_B_APP_STORE_URL} className="genb-store-link" aria-label="Download GEN-B on the App Store">
           <Image
             src="/gen-b/genb-app-store-badge.png"
             alt="Download on the App Store"
