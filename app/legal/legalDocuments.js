@@ -14,7 +14,7 @@ export const legalDocuments = {
       {
         title: "GEN-B App Data Practices",
         body: [
-          "GEN-B is designed for professional broadcast test signal generation, HDMI output checks, reference video playback, tone generation, and signal workflow support. The app does not intentionally collect personal data through normal app use.",
+          "GEN-B is designed for professional broadcast test signal generation, external output checks, reference video playback, tone generation, and signal workflow support. The app does not intentionally collect personal data through normal app use.",
           "GEN-B is intended to operate as a field-ready engineering tool. Its core functions are focused on local device behavior, external display output, app settings, test patterns, reference clips, and related signal tools.",
         ],
       },
@@ -75,7 +75,7 @@ export const legalDocuments = {
       {
         title: "GEN-B Purpose",
         body: [
-          "GEN-B is intended for professional broadcast testing, engineering support, signal verification, troubleshooting, reference playback, HDMI output checks, and related technical workflows.",
+          "GEN-B is intended for professional broadcast testing, engineering support, signal verification, troubleshooting, reference playback, external output checks, and related technical workflows.",
           "Users are responsible for proper use of GEN-B in their own technical environment, including validating compatibility with their iPhone model, iOS version, adapter, display, converter, routing chain, and operating conditions.",
         ],
       },
@@ -144,7 +144,7 @@ export const legalDocuments = {
       {
         title: "Environment and Hardware Variables",
         body: [
-          "Results may depend on iPhone model, iOS version, USB-C or HDMI adapter, display, converter, cable quality, system configuration, signal chain behavior, and external hardware limitations.",
+          "Results may depend on iPhone model, iOS version, USB-C video adapter, display, converter, cable quality, system configuration, signal chain behavior, and external hardware limitations.",
           "Different adapters, converters, displays, and routing systems may interpret or display signals differently.",
         ],
       },
@@ -226,14 +226,14 @@ export const legalDocuments = {
       {
         title: "What Support Covers",
         body: [
-          "Support covers GEN-B app questions, app behavior, troubleshooting, HDMI output questions, device compatibility questions, and bug reports.",
+          "Support covers GEN-B app questions, app behavior, troubleshooting, external output questions, device compatibility questions, and bug reports.",
           "PBE will make reasonable efforts to help users understand app behavior, identify possible configuration issues, and collect useful details for app improvement.",
         ],
       },
       {
         title: "What to Include",
         body: [
-          "When contacting support, users should include iPhone model, iOS version, GEN-B app version, HDMI adapter, display or converter model, a description of the issue, steps to reproduce the issue, and screenshots or photos if available.",
+          "When contacting support, users should include iPhone model, iOS version, GEN-B app version, video adapter, display, or converter model, a description of the issue, steps to reproduce the issue, and screenshots or photos if available.",
           "Clear details help the support team understand the signal path, reproduce behavior when possible, and provide more useful guidance.",
         ],
       },

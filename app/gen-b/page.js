@@ -11,8 +11,8 @@ const features = [
     text: "Professional HD patterns for fast video troubleshooting, calibration checks, and signal verification.",
   },
   {
-    title: "HDMI Signal Output",
-    text: "Designed for iPhone USB-C to HDMI output, giving engineers a portable broadcast test source anywhere.",
+    title: "Wired Signal Output",
+    text: "Designed for iPhone USB-C video output, giving engineers a portable broadcast test source anywhere.",
   },
   {
     title: "Tone Generator",
@@ -28,7 +28,7 @@ const highlights = [
   "Full HD broadcast test patterns",
   "Reference video clips",
   "1 kHz stereo tone generator",
-  "HDMI output status monitoring",
+  "External output status monitoring",
   "RasterScope active-area tools",
   "Sweep display analysis",
   "Broadcast workflow support",
@@ -38,7 +38,7 @@ const highlights = [
 const showcaseCards = [
   {
     title: "Portable Broadcast Testing",
-    text: "GEN-B turns your iPhone into a professional HDMI test signal source for quick field verification, troubleshooting, and setup checks.",
+    text: "GEN-B turns your iPhone into a professional broadcast test signal source for quick field verification, troubleshooting, and setup checks.",
   },
   {
     title: "Patterns, Video & Audio",
@@ -53,7 +53,7 @@ const showcaseCards = [
 const analysisHighlights = [
   {
     title: "Oscilloscope Analysis",
-    text: "Monitor generated video levels and waveform characteristics before HDMI transmission.",
+    text: "Monitor generated video levels and waveform characteristics before external video transmission.",
   },
   {
     title: "Vectorscope Monitoring",
@@ -87,7 +87,7 @@ export default function GenBPage() {
               iPhone.
             </h2>
             <p>
-              GEN-B is a professional HDMI test pattern generator designed for
+              GEN-B is a professional broadcast test signal generator designed for
               broadcast engineers, control rooms, production teams, and field
               troubleshooting. It provides reliable video patterns, reference
               clips, tone generation, and signal analysis tools to help validate
@@ -150,7 +150,7 @@ export default function GenBPage() {
           <h2>Professional signal testing in your pocket.</h2>
           <p>
             GEN-B combines HD test patterns, reference video clips, tone
-            generation, HDMI output monitoring, RasterScope tools, and Sweep
+            generation, external output monitoring, RasterScope tools, and Sweep
             analysis in a simple field-ready app built for professional
             broadcast workflows.
           </p>
@@ -246,8 +246,8 @@ export default function GenBPage() {
           </p>
           <p>
             Designed by broadcast engineers, GEN-B supports professional display
-            testing workflows across HDMI, USB-C video output, DisplayPort
-            adapters, and compatible external displays.
+            testing workflows across USB-C video output, DisplayPort
+            adapters, external displays, converters, and field signal paths.
           </p>
         </div>
 

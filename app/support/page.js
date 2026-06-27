@@ -29,7 +29,7 @@ export default function SupportPage() {
           <h2>What to Include When Reporting an Issue</h2>
           <p>
             Please include your iPhone model, iOS version, GEN-B app version,
-            HDMI adapter or display used, a short description of the issue, and
+            video adapter, display, or converter used, a short description of the issue, and
             screenshots or photos if available.
           </p>
         </article>
@@ -37,7 +37,7 @@ export default function SupportPage() {
         <article className="service-card">
           <h2>Basic Troubleshooting</h2>
           <p>
-            Check the HDMI/USB-C connection, restart the app, confirm the
+            Check the USB-C video connection, restart the app, confirm the
             external display is powered on, and make sure iOS is updated.
           </p>
         </article>

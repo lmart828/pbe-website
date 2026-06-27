@@ -9,7 +9,7 @@ const bestUses = [
 ];
 
 const wiredOutputItems = [
-  "Supports USB-C to HDMI",
+  "Supports USB-C video output",
   "Supports USB-C to USB-C displays",
   "Supports USB-C to DisplayPort",
   "Required for RasterScope Analysis",
@@ -137,8 +137,8 @@ export default function WirelessOutputPage() {
             Wireless Output is a useful way to view GEN-B on compatible displays
             for demonstrations, training, and quick signal reference. For
             professional signal testing, RasterScope Analysis, and SWEEP, use a
-            direct wired connection such as USB-C to HDMI, USB-C to USB-C, or
-            USB-C to DisplayPort.
+            direct wired connection such as USB-C video adapters, USB-C to USB-C,
+            USB-C to DisplayPort, or compatible external display adapters.
           </p>
         </div>
 
