@@ -1107,10 +1107,25 @@ a {
 }
 
 .genb-final-cta {
+  position: relative;
+  isolation: isolate;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
+  background: transparent;
+  border-top: none;
+}
+
+.genb-final-cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   background: linear-gradient(135deg, #07111f 0%, #061827 100%);
   border-top: 1px solid rgba(0, 207, 255, 0.18);
 }
