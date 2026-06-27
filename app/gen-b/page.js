@@ -127,6 +127,40 @@ export default function GenBPage() {
         </div>
       </section>
 
+      <section className="genb-about-section">
+        <div className="genb-about-copy">
+          <h2>Powered by Modern iPhone Performance</h2>
+          <p>
+            GEN-B is built to take advantage of the power inside today&apos;s
+            iPhone hardware. Modern Apple silicon combines advanced processing,
+            GPU-accelerated graphics, professional video handling, high-speed
+            USB-C video output, and efficient media performance inside a device
+            small enough to fit in your pocket.
+          </p>
+          <p>
+            For broadcast engineers, that power matters. GEN-B uses the iPhone
+            as a portable professional platform for generating Full HD test
+            patterns, reference clips, audio tone, external video output, and
+            signal-analysis tools in real-world field environments.
+          </p>
+          <p>
+            The result is a compact broadcast test signal system powered by
+            modern mobile hardware — fast, portable, reliable, and ready for
+            engineering work wherever the signal path begins.
+          </p>
+        </div>
+
+        <div className="genb-hero-visual">
+          <Image
+            src="/gen-b/modern-iphone-silicon.jpg"
+            alt="Modern iPhone Apple silicon hardware"
+            width={650}
+            height={366}
+            className="genb-interface-image"
+          />
+        </div>
+      </section>
+
       <section className="genb-section">
         <div className="genb-section-heading">
           <p className="genb-kicker">Field-Ready Tools</p>
