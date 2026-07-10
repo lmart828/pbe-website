@@ -37,6 +37,7 @@ function isActivePath(pathname, href) {
 export default function NavLinks() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [suppressedDropdownHref, setSuppressedDropdownHref] = useState(null);
 
   return (
     <>
@@ -46,7 +47,10 @@ export default function NavLinks() {
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={isOpen}
         aria-controls="primary-navigation"
-        onClick={() => setIsOpen((open) => !open)}
+        onClick={() => {
+          setSuppressedDropdownHref(null);
+          setIsOpen((open) => !open);
+        }}
       >
         <span />
         <span />
@@ -62,12 +66,23 @@ export default function NavLinks() {
 
           if (item.children?.length) {
             return (
-              <div className="nav-item-with-dropdown" key={item.href}>
+              <div
+                className={`nav-item-with-dropdown${
+                  !isOpen && suppressedDropdownHref === item.href
+                    ? " nav-dropdown-suppressed"
+                    : ""
+                }`}
+                key={item.href}
+              >
                 <Link
                   href={item.href}
                   className={`nav-parent-link${isActive ? " active" : ""}`}
                   aria-current={isActive ? "page" : undefined}
-                  onClick={() => setIsOpen(false)}
+                  onMouseEnter={() => setSuppressedDropdownHref(null)}
+                  onClick={() => {
+                    setSuppressedDropdownHref(null);
+                    setIsOpen(false);
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -82,7 +97,10 @@ export default function NavLinks() {
                         className={childIsActive ? "active" : undefined}
                         aria-current={childIsActive ? "page" : undefined}
                         key={child.href}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                          setSuppressedDropdownHref(item.href);
+                          setIsOpen(false);
+                        }}
                       >
                         {child.label}
                       </Link>
@@ -99,7 +117,10 @@ export default function NavLinks() {
               className={isActive ? "active" : undefined}
               aria-current={isActive ? "page" : undefined}
               key={item.href}
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setSuppressedDropdownHref(null);
+                setIsOpen(false);
+              }}
             >
               {item.label}
             </Link>
