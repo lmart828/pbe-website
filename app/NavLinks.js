@@ -9,7 +9,15 @@ const navItems = [
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/industries", label: "Industries" },
-  { href: "/gen-b", label: "GEN-B" },
+  {
+    href: "/gen-b",
+    label: "GEN-B",
+    children: [
+      { href: "/gen-b", label: "GEN-B Overview" },
+      { href: "/gen-b/sweep", label: "SWEEP Engineering Note" },
+      { href: "/gen-b/wireless-output", label: "Wireless Output" },
+    ],
+  },
   { href: "/support", label: "Support" },
   { href: "/contact", label: "Contact" },
 ];
@@ -51,6 +59,39 @@ export default function NavLinks() {
       >
         {navItems.map((item) => {
           const isActive = isActivePath(pathname, item.href);
+
+          if (item.children?.length) {
+            return (
+              <div className="nav-item-with-dropdown" key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`nav-parent-link${isActive ? " active" : ""}`}
+                  aria-current={isActive ? "page" : undefined}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+
+                <div className="nav-dropdown" aria-label={`${item.label} links`}>
+                  {item.children.map((child) => {
+                    const childIsActive = isActivePath(pathname, child.href);
+
+                    return (
+                      <Link
+                        href={child.href}
+                        className={childIsActive ? "active" : undefined}
+                        aria-current={childIsActive ? "page" : undefined}
+                        key={child.href}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {child.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          }
 
           return (
             <Link

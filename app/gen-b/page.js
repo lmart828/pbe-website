@@ -223,6 +223,30 @@ export default function GenBPage() {
 
       <section className="genb-section">
         <div className="genb-section-heading">
+          <p className="genb-kicker">GEN-B Engineering Notes</p>
+          <h2>Technical notes from the GEN-B engineering workflow.</h2>
+        </div>
+
+        <div className="genb-showcase-grid">
+          <article className="genb-showcase-card">
+            <span className="genb-showcase-rule" />
+            <h3>
+              SWEEP: When iOS Doesn&apos;t Give You EDID, You Build with Geometry
+            </h3>
+            <p>
+              A technical breakdown of how GEN-B SWEEP uses timing, geometry,
+              and a moving reference layer to provide useful display information
+              without relying on raw EDID access.
+            </p>
+            <Link href="/gen-b/sweep" className="btn-secondary">
+              Read Engineering Note
+            </Link>
+          </article>
+        </div>
+      </section>
+
+      <section className="genb-section">
+        <div className="genb-section-heading">
           <p className="genb-kicker">Showcase</p>
           <h2>Purpose-built screens for fast technical decisions.</h2>
         </div>
