@@ -116,13 +116,18 @@ export default function GenBPage() {
 
           <div className="genb-hero-visual">
             <InteractiveGenBDiagram />
-            <Image
-              src="/gen-b/genb-app-icon.png"
-              alt="GEN-B app icon"
-              width={96}
-              height={96}
-              className="genb-icon-accent"
-            />
+            <a
+              href={GEN_B_APP_STORE_URL}
+              aria-label="View GEN-B on the App Store"
+            >
+              <Image
+                src="/gen-b/genb-app-icon.png"
+                alt="GEN-B app icon"
+                width={96}
+                height={96}
+                className="genb-icon-accent"
+              />
+            </a>
           </div>
         </div>
       </section>
