@@ -15,6 +15,10 @@ const navItems = [
     children: [
       { href: "/gen-b", label: "GEN-B Overview" },
       { href: "/gen-b/sweep", label: "SWEEP Engineering Note" },
+      {
+        href: "/gen-b/algorithmic-tone-generation",
+        label: "Algorithmic Tone Engineering Note",
+      },
       { href: "/gen-b/wireless-output", label: "Wireless Output" },
     ],
   },
