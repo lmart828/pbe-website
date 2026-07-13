@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ArticleFigure from "./ArticleFigure";
+import ArticleFigure from "../../components/ArticleFigure";
 
 const canonicalUrl =
   "https://pbe-engineering.com/gen-b/algorithmic-tone-generation";
@@ -106,6 +106,17 @@ const figures = {
   },
 };
 
+const toneFigureClasses = {
+  figure: "tone-figure",
+  imageButton: "tone-image-button",
+  image: "tone-image",
+  lightbox: "tone-lightbox",
+  lightboxPanel: "tone-lightbox-panel",
+  lightboxTitle: "tone-lightbox-title",
+  lightboxClose: "tone-lightbox-close",
+  lightboxImage: "tone-lightbox-image",
+};
+
 export default function AlgorithmicToneGenerationPage() {
   return (
     <main className="tone-page">
@@ -151,7 +162,11 @@ export default function AlgorithmicToneGenerationPage() {
             This distinction matters. GEN-B is not playing a recording of a test
             signal. <strong>GEN-B is creating the test signal.</strong>
           </p>
-          <ArticleFigure figure={figures.realtime} priority />
+          <ArticleFigure
+            figure={figures.realtime}
+            priority
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">
@@ -207,7 +222,10 @@ export default function AlgorithmicToneGenerationPage() {
             <li>Immediate parameter changes.</li>
             <li>Repeatable output derived from the same mathematical model.</li>
           </ul>
-          <ArticleFigure figure={figures.noFiles} />
+          <ArticleFigure
+            figure={figures.noFiles}
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">
@@ -266,8 +284,14 @@ export default function AlgorithmicToneGenerationPage() {
             settling, symmetry, and ringing can therefore expose bandwidth,
             phase, filtering, or stability problems.
           </p>
-          <ArticleFigure figure={figures.waveforms} />
-          <ArticleFigure figure={figures.essential} />
+          <ArticleFigure
+            figure={figures.waveforms}
+            classNames={toneFigureClasses}
+          />
+          <ArticleFigure
+            figure={figures.essential}
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">
@@ -293,7 +317,10 @@ export default function AlgorithmicToneGenerationPage() {
             domains; their relationship depends on the alignment convention
             and equipment calibration used by a particular facility.
           </p>
-          <ArticleFigure figure={figures.standards} />
+          <ArticleFigure
+            figure={figures.standards}
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">
@@ -356,7 +383,10 @@ export default function AlgorithmicToneGenerationPage() {
             simply evaluates the selected mathematical model using a new
             frequency parameter.
           </p>
-          <ArticleFigure figure={figures.completeSet} />
+          <ArticleFigure
+            figure={figures.completeSet}
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">
@@ -388,7 +418,10 @@ export default function AlgorithmicToneGenerationPage() {
             <li>Specialized broadcast and audiovisual reference signals.</li>
           </ul>
           <p>The engine remains the same. The mathematical model changes.</p>
-          <ArticleFigure figure={figures.future} />
+          <ArticleFigure
+            figure={figures.future}
+            classNames={toneFigureClasses}
+          />
         </section>
 
         <section className="tone-section">

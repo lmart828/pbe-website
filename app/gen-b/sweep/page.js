@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticleFigure from "../../components/ArticleFigure";
 
 export const metadata = {
   title:
@@ -51,21 +51,16 @@ const articleImages = {
   },
 };
 
-function ArticleFigure({ image, priority = false }) {
-  return (
-    <figure className="sweep-figure">
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
-        priority={priority}
-        className="sweep-image"
-      />
-      <figcaption>{image.caption}</figcaption>
-    </figure>
-  );
-}
+const sweepFigureClasses = {
+  figure: "sweep-figure",
+  imageButton: "sweep-image-button",
+  image: "sweep-image",
+  lightbox: "sweep-lightbox",
+  lightboxPanel: "sweep-lightbox-panel",
+  lightboxTitle: "sweep-lightbox-title",
+  lightboxClose: "sweep-lightbox-close",
+  lightboxImage: "sweep-lightbox-image",
+};
 
 export default function GenBSweepPage() {
   return (
@@ -91,7 +86,11 @@ export default function GenBSweepPage() {
             </div>
           </div>
 
-          <ArticleFigure image={articleImages.hero} priority />
+          <ArticleFigure
+            figure={articleImages.hero}
+            priority
+            classNames={sweepFigureClasses}
+          />
         </div>
       </section>
 
@@ -133,7 +132,10 @@ export default function GenBSweepPage() {
               matte conditions.
             </p>
           </div>
-          <ArticleFigure image={articleImages.movingOverlay} />
+          <ArticleFigure
+            figure={articleImages.movingOverlay}
+            classNames={sweepFigureClasses}
+          />
         </section>
 
         <section className="sweep-section">
@@ -145,7 +147,10 @@ export default function GenBSweepPage() {
             reflects, and travels back, which keeps it inside the calculated
             boundaries without requiring object tracking inside the video.
           </p>
-          <ArticleFigure image={articleImages.triangleWave} />
+          <ArticleFigure
+            figure={articleImages.triangleWave}
+            classNames={sweepFigureClasses}
+          />
           <p>
             The important idea is not animation for its own sake. The important
             idea is that time becomes a deterministic input, geometry defines the
@@ -155,7 +160,10 @@ export default function GenBSweepPage() {
         </section>
 
         <section className="sweep-section sweep-grid-section sweep-grid-reverse">
-          <ArticleFigure image={articleImages.geometryDiagram} />
+          <ArticleFigure
+            figure={articleImages.geometryDiagram}
+            classNames={sweepFigureClasses}
+          />
           <div>
             <p className="genb-kicker">Raster Geometry</p>
             <h2>Non-16:9 workflows need measurements, not assumptions.</h2>
@@ -186,7 +194,10 @@ export default function GenBSweepPage() {
             resulting rectangle becomes the basis for active area, pillarbox or
             matte estimates, coverage, and aspect relationship feedback.
           </p>
-          <ArticleFigure image={articleImages.geometryMapping} />
+          <ArticleFigure
+            figure={articleImages.geometryMapping}
+            classNames={sweepFigureClasses}
+          />
           <p>
             That is the core of SWEEP&apos;s engineering posture: use known
             signal geometry, respect the platform boundary, and present the
@@ -329,6 +340,46 @@ export default function GenBSweepPage() {
           box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
         }
 
+        .sweep-image-button {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding: 0;
+          border: 0;
+          border-radius: 14px;
+          background: transparent;
+          cursor: zoom-in;
+        }
+
+        .sweep-image-button::after {
+          content: "Click to enlarge";
+          position: absolute;
+          right: 12px;
+          bottom: 12px;
+          padding: 6px 10px;
+          border: 1px solid rgba(0, 207, 255, 0.28);
+          border-radius: 999px;
+          background: rgba(2, 6, 13, 0.78);
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 0.78rem;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+          opacity: 0;
+          transform: translateY(4px);
+          transition: opacity 180ms ease, transform 180ms ease;
+        }
+
+        .sweep-image-button:hover::after,
+        .sweep-image-button:focus-visible::after {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .sweep-image-button:focus-visible {
+          outline: 2px solid #00cfff;
+          outline-offset: 4px;
+        }
+
         .sweep-image {
           display: block;
           width: 100%;
@@ -342,6 +393,67 @@ export default function GenBSweepPage() {
           color: rgba(213, 220, 232, 0.78);
           font-size: 0.92rem;
           line-height: 1.55;
+        }
+
+        .sweep-lightbox {
+          position: fixed;
+          inset: 0;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 24px;
+          background: rgba(0, 0, 0, 0.88);
+        }
+
+        .sweep-lightbox-panel {
+          position: relative;
+          display: flex;
+          max-width: calc(100vw - 48px);
+          max-height: calc(100vh - 48px);
+          align-items: center;
+          justify-content: center;
+        }
+
+        .sweep-lightbox-title {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+        }
+
+        .sweep-lightbox-close {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          z-index: 1;
+          padding: 9px 13px;
+          border: 1px solid rgba(0, 207, 255, 0.36);
+          border-radius: 999px;
+          background: rgba(2, 6, 13, 0.88);
+          color: #ffffff;
+          cursor: pointer;
+          font-size: 0.9rem;
+          font-weight: 800;
+        }
+
+        .sweep-lightbox-close:focus-visible {
+          outline: 2px solid #00cfff;
+          outline-offset: 3px;
+        }
+
+        .sweep-lightbox-image {
+          display: block;
+          width: auto;
+          max-width: calc(100vw - 48px);
+          max-height: calc(100vh - 48px);
+          border: 1px solid rgba(0, 207, 255, 0.24);
+          border-radius: 16px;
+          box-shadow: 0 28px 90px rgba(0, 0, 0, 0.62);
+          object-fit: contain;
         }
 
         .sweep-callout,
@@ -432,6 +544,26 @@ export default function GenBSweepPage() {
 
           .sweep-image {
             border-radius: 10px;
+          }
+
+          .sweep-image-button {
+            border-radius: 10px;
+          }
+
+          .sweep-image-button::after {
+            right: 8px;
+            bottom: 8px;
+            font-size: 0.72rem;
+          }
+
+          .sweep-lightbox {
+            padding: 14px;
+          }
+
+          .sweep-lightbox-panel,
+          .sweep-lightbox-image {
+            max-width: calc(100vw - 28px);
+            max-height: calc(100vh - 28px);
           }
 
           .sweep-callout,
