@@ -196,13 +196,18 @@ export default function GenBPage() {
         </div>
 
         <div className="genb-about-panel">
-          <Image
-            src="/gen-b/genb-app-icon.png"
-            alt="GEN-B app icon"
-            width={118}
-            height={118}
-            className="genb-about-icon"
-          />
+          <a
+            href={GEN_B_APP_STORE_URL}
+            aria-label="View GEN-B on the App Store"
+          >
+            <Image
+              src="/gen-b/genb-app-icon.png"
+              alt="GEN-B app icon"
+              width={118}
+              height={118}
+              className="genb-about-icon"
+            />
+          </a>
           <p>
             Designed to help engineers validate the real chain: source, adapter,
             converter, router, display, and room.
