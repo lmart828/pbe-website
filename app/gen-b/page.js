@@ -241,6 +241,22 @@ export default function GenBPage() {
           <article className="genb-showcase-card">
             <span className="genb-showcase-rule" />
             <h3>
+              EBU Color Bars: The Hidden Mathematics Behind 75% and 100%
+            </h3>
+            <p>
+              How a vectorscope discrepancy led PBE to replace a fixed
+              normalization value with pattern-aware Rec.709 calibration
+            </p>
+            <Link
+              href="/gen-b/ebu-color-bars-75-100"
+              className="btn-secondary"
+            >
+              Read Engineering Note
+            </Link>
+          </article>
+          <article className="genb-showcase-card">
+            <span className="genb-showcase-rule" />
+            <h3>
               SWEEP: When iOS Doesn&apos;t Give You EDID, You Build with Geometry
             </h3>
             <p>

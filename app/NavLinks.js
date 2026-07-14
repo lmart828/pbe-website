@@ -19,6 +19,10 @@ const navItems = [
         href: "/gen-b/algorithmic-tone-generation",
         label: "Algorithmic Tone Engineering Note",
       },
+      {
+        href: "/gen-b/ebu-color-bars-75-100",
+        label: "EBU Color Bars Engineering Note",
+      },
       { href: "/gen-b/wireless-output", label: "Wireless Output" },
     ],
   },
