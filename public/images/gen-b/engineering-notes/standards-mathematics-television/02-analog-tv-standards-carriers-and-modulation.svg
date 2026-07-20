@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Analog Television Standards and Modulation</title>
+<desc id="desc">NTSC, PAL, PAL-M and SECAM differed by timing, channel plan and color encoding strategy.</desc>
+<rect width="1600" height="900" fill="#f7f9fb"/>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#1d4ed8"/></marker></defs>
+<text x="70" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#14213d">Analog Television Standards and Modulation</text>
+<text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5c677d">NTSC, PAL, PAL-M and SECAM differed by timing, channel plan and color encoding strategy.</text>
+<rect x="70" y="165" width="520" height="585" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="94" y="203" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Carrier Structure</text>
+
+<g font-family="Inter, Arial, sans-serif">
+  <path d="M130 245 C190 190,250 300,310 245 S430 245,490 245" fill="none" stroke="#1d4ed8" stroke-width="5"/>
+  <text x="125" y="210" font-size="22" font-weight="800" fill="#14213d">Video AM-VSB</text>
+  <text x="125" y="287" font-size="17" fill="#111827">Luminance amplitude varies carrier; vestigial sideband saves RF bandwidth.</text>
+  <path d="M130 430 C170 385,210 475,250 430 S330 430,370 430 S450 430,490 430" fill="none" stroke="#dc2626" stroke-width="5"/>
+  <text x="125" y="395" font-size="22" font-weight="800" fill="#14213d">Audio FM</text>
+  <text x="125" y="472" font-size="17" fill="#111827">Sound rides on a separate carrier; frequency deviation carries audio.</text>
+  <path d="M130 610 C160 540,210 680,250 610 S340 610,380 610 S465 610,505 610" fill="none" stroke="#16a34a" stroke-width="5"/>
+  <text x="125" y="575" font-size="22" font-weight="800" fill="#14213d">Color Subcarrier</text>
+  <text x="125" y="652" font-size="17" fill="#111827">NTSC/PAL encode chroma by phase and amplitude; SECAM uses FM color-difference carriers.</text>
+</g>
+
+<rect x="660" y="185" width="830" height="160" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="684" y="223" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">NTSC</text>
+<text x="684" y="260" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">525/59.94 heritage, 6 MHz channel in many regions; chroma phase/amplitude subcarrier.</text>
+<text x="684" y="288" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Color compatibility preserved black-and-white luminance reception.</text>
+<rect x="660" y="375" width="830" height="160" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="684" y="413" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">PAL / PAL-M</text>
+<text x="684" y="450" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">PAL alternates color phase line by line to reduce hue errors.</text>
+<text x="684" y="478" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">PAL-M combined PAL color treatment with NTSC-like 525/60 timing in Brazil.</text>
+<rect x="660" y="565" width="830" height="160" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="684" y="603" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">SECAM</text>
+<text x="684" y="640" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sequential color with memory; color-difference signals sent on alternating lines.</text>
+<text x="684" y="668" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">FM chroma approach made it robust in some transmission conditions.</text>
+</svg>

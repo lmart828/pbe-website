@@ -47,6 +47,9 @@ export default function ArticleFigure({
             width={figure.width}
             height={figure.height}
             priority={priority}
+            unoptimized={
+              figure.unoptimized ?? /\.svg(?:$|\?)/i.test(figure.src)
+            }
             className={classNames.image}
           />
         </button>

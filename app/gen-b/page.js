@@ -241,6 +241,22 @@ export default function GenBPage() {
           <article className="genb-showcase-card">
             <span className="genb-showcase-rule" />
             <h3>
+              When the Visible Image Depends on Invisible Mathematics
+            </h3>
+            <p>
+              Standards, history, algorithms, and the engineering logic behind
+              professional test-pattern generation.
+            </p>
+            <Link
+              href="/gen-b/standards-mathematics-television"
+              className="btn-secondary"
+            >
+              Read Engineering Note
+            </Link>
+          </article>
+          <article className="genb-showcase-card">
+            <span className="genb-showcase-rule" />
+            <h3>
               EBU Color Bars: The Hidden Mathematics Behind 75% and 100%
             </h3>
             <p>

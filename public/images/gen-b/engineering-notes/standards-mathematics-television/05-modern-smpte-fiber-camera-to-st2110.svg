@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Modern SMPTE Hybrid Fiber Camera Path to ST 2110</title>
+<desc id="desc">One camera cable can carry optical video/data, copper power and control before the workflow becomes IP essences.</desc>
+<rect width="1600" height="900" fill="#f7f9fb"/>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#1d4ed8"/></marker></defs>
+<text x="70" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#14213d">Modern SMPTE Hybrid Fiber Camera Path to ST 2110</text>
+<text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5c677d">One camera cable can carry optical video/data, copper power and control before the workflow becomes IP essences.</text>
+<rect x="60" y="185" width="260" height="210" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="84" y="223" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Camera Head</text>
+<text x="84" y="260" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Image sensor + DSP</text>
+<text x="84" y="288" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Return video</text>
+<text x="84" y="316" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Intercom/tally</text>
+<text x="84" y="344" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Paint/control data</text>
+<line x1="335" y1="290" x2="450" y2="290" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="465" y="165" width="320" height="250" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="489" y="203" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">SMPTE Hybrid Cable</text>
+<text x="489" y="240" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">2 single-mode fibers</text>
+<text x="489" y="268" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Copper power conductors</text>
+<text x="489" y="296" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Control / intercom / tally</text>
+<text x="489" y="324" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Rugged strength member</text>
+<text x="489" y="352" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Connector: SMPTE 304 family</text>
+<line x1="800" y1="290" x2="910" y2="290" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="925" y="185" width="250" height="210" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="949" y="223" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">HDX / Base Station</text>
+<text x="949" y="260" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Fiber I/O aggregation</text>
+<text x="949" y="288" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Signal recovery</text>
+<text x="949" y="316" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Camera services</text>
+<text x="949" y="344" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Routing handoff</text>
+<line x1="1188" y1="290" x2="1305" y2="290" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1320" y="185" width="220" height="210" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="1344" y="223" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Glimmerglass</text>
+<text x="1344" y="260" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Optical routing</text>
+<text x="1344" y="288" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Fiber crosspoint</text>
+<text x="1344" y="316" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Remote path management</text>
+<rect x="170" y="565" width="250" height="200" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="194" y="603" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">CCU</text>
+<text x="194" y="640" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Camera control unit</text>
+<text x="194" y="668" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Shading interface</text>
+<text x="194" y="696" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Video/audio/data outputs</text>
+<text x="194" y="724" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Return feeds</text>
+<line x1="1320" y1="395" x2="420" y2="620" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="500" y="565" width="250" height="200" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="524" y="603" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">RCP</text>
+<text x="524" y="640" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Iris, black, gain</text>
+<text x="524" y="668" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Paint control</text>
+<text x="524" y="696" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Scene file recall</text>
+<text x="524" y="724" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Controls CCU/camera</text>
+<line x1="500" y1="650" x2="435" y2="650" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="830" y="565" width="300" height="200" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="854" y="603" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Gateway / I/O</text>
+<text x="854" y="640" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Fiber/SDI electrical conversion</text>
+<text x="854" y="668" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">SDI embed/de-embed</text>
+<text x="854" y="696" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">RTP packetization</text>
+<text x="854" y="724" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">SDP/NMOS registration</text>
+<line x1="760" y1="650" x2="815" y2="650" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1210" y="565" width="330" height="200" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="1234" y="603" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">ST 2110 Fabric</text>
+<text x="1234" y="640" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">ST 2110-20 video</text>
+<text x="1234" y="668" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">ST 2110-30 audio</text>
+<text x="1234" y="696" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">ST 2110-40 ANC</text>
+<text x="1234" y="724" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">PTP time reference</text>
+<text x="1234" y="752" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Multicast/unicast routing</text>
+<line x1="1145" y1="650" x2="1195" y2="650" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>

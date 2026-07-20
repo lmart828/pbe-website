@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Basic Over-the-Air Television Chain</title>
+<desc id="desc">From captured light to RF transmission, reception and home display.</desc>
+<rect width="1600" height="900" fill="#f7f9fb"/>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#1d4ed8"/></marker></defs>
+<text x="70" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#14213d">Basic Over-the-Air Television Chain</text>
+<text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5c677d">From captured light to RF transmission, reception and home display.</text>
+<rect x="70" y="250" width="240" height="250" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="94" y="288" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Camera</text>
+<text x="94" y="325" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Lens focuses image</text>
+<text x="94" y="353" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sensor/tube converts light</text>
+<text x="94" y="381" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sync and timing added</text>
+<line x1="325" y1="375" x2="425" y2="375" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="440" y="250" width="260" height="250" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="464" y="288" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Production</text>
+<text x="464" y="325" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Switcher selects sources</text>
+<text x="464" y="353" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Graphics and audio mixed</text>
+<text x="464" y="381" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Test bars verify path</text>
+<line x1="715" y1="375" x2="815" y2="375" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="830" y="250" width="260" height="250" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="854" y="288" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Transmitter</text>
+<text x="854" y="325" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Video/audio modulated</text>
+<text x="854" y="353" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">RF power amplified</text>
+<text x="854" y="381" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Antenna radiates signal</text>
+<line x1="1105" y1="375" x2="1205" y2="375" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1220" y="250" width="300" height="250" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="1244" y="288" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Home Receiver</text>
+<text x="1244" y="325" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Antenna captures RF</text>
+<text x="1244" y="353" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Tuner/demod recovers signal</text>
+<text x="1244" y="381" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Display reconstructs picture</text>
+<rect x="350" y="620" width="900" height="110" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="374" y="658" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Engineering References</text>
+<text x="374" y="695" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sync, level, colorimetry, channel bandwidth and modulation standards keep every stage interoperable.</text>
+</svg>

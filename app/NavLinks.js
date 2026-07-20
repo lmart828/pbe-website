@@ -23,6 +23,10 @@ const navItems = [
         href: "/gen-b/ebu-color-bars-75-100",
         label: "EBU Color Bars Engineering Note",
       },
+      {
+        href: "/gen-b/standards-mathematics-television",
+        label: "Standards & Mathematics Engineering Note",
+      },
       { href: "/gen-b/wireless-output", label: "Wireless Output" },
     ],
   },

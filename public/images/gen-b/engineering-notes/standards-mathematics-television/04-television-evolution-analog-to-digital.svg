@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Evolution From Analog Television to Digital Workflows</title>
+<desc id="desc">The signal changed from continuous waveforms to sampled code values and packetized essences.</desc>
+<rect width="1600" height="900" fill="#f7f9fb"/>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#1d4ed8"/></marker></defs>
+<text x="70" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#14213d">Evolution From Analog Television to Digital Workflows</text>
+<text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5c677d">The signal changed from continuous waveforms to sampled code values and packetized essences.</text>
+<rect x="70" y="190" width="310" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="94" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Analog Composite</text>
+<text x="94" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Luma + chroma + sync in one waveform</text>
+<text x="94" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">NTSC/PAL/SECAM encoding</text>
+<text x="94" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Noise accumulates through generations</text>
+<text x="94" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Waveform and vectorscope alignment</text>
+<line x1="395" y1="450" x2="485" y2="450" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="500" y="190" width="310" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="524" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Digital Component</text>
+<text x="524" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">YCbCr sampled numerically</text>
+<text x="524" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Rec.601 / Rec.709 colorimetry</text>
+<text x="524" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Legal range code values</text>
+<text x="524" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">SDI carries video, audio, timecode</text>
+<line x1="825" y1="450" x2="915" y2="450" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="930" y="190" width="310" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="954" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">File and Stream</text>
+<text x="954" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Compression and containers</text>
+<text x="954" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Metadata and color management</text>
+<text x="954" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">UHD, HDR, wide color</text>
+<text x="954" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Quality depends on declared standards</text>
+<line x1="1255" y1="450" x2="1345" y2="450" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1360" y="190" width="170" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="1384" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">IP</text>
+<text x="1384" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">ST 2110</text>
+<text x="1384" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">RTP flows</text>
+<text x="1384" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">PTP timing</text>
+<text x="1384" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">NMOS control</text>
+</svg>

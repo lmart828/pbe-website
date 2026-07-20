@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Television: From Scanning Discs to Digital Samples</title>
+<desc id="desc">A compact engineering view of how image reproduction moved from mechanics to algorithms.</desc>
+<rect width="1600" height="900" fill="#f7f9fb"/>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#1d4ed8"/></marker></defs>
+<text x="70" y="78" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#14213d">Television: From Scanning Discs to Digital Samples</text>
+<text x="70" y="122" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5c677d">A compact engineering view of how image reproduction moved from mechanics to algorithms.</text>
+<rect x="70" y="190" width="430" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="94" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Electromechanical TV</text>
+<text x="94" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Nipkow-style rotating disc</text>
+<text x="94" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sequential light scanning</text>
+<text x="94" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Photocell converts light to voltage</text>
+<text x="94" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Low resolution, mechanical stability limits</text>
+<text x="94" y="377" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Timing is physical rotation</text>
+<line x1="515" y1="450" x2="610" y2="450" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="625" y="190" width="430" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="649" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Analog Electronic TV</text>
+<text x="649" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Camera tube / CRT raster scanning</text>
+<text x="649" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Continuous voltage represents luminance</text>
+<text x="649" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Sync pulses define line and field timing</text>
+<text x="649" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Color encoded into chroma subcarrier</text>
+<text x="649" y="377" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Timing is electrical waveform discipline</text>
+<line x1="1070" y1="450" x2="1165" y2="450" stroke="#1d4ed8" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1180" y="190" width="350" height="520" rx="16" fill="#ffffff" stroke="#9aa4b2" stroke-width="2"/>
+<text x="1204" y="228" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#14213d">Digital TV</text>
+<text x="1204" y="265" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Pixels sampled into numeric code values</text>
+<text x="1204" y="293" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">YCbCr / RGB colorimetry</text>
+<text x="1204" y="321" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Compression, transport packets, metadata</text>
+<text x="1204" y="349" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">SDI, HDMI, IP, ST 2110 workflows</text>
+<text x="1204" y="377" font-family="Inter, Arial, sans-serif" font-size="18" fill="#111827">Timing is clock, packet and PTP discipline</text>
+</svg>
